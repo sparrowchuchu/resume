@@ -9,23 +9,24 @@
     <style>
         body{
             font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
-            
+            width: 640px;
+            margin: auto;
         }
         .title{
             background-color: #b1cfdd;
             color: #cc966a;
             font-size: 60px;
             height: 160px;
-            margin: 20px;
             padding: 66px;
+            margin: 30px 0px;
         }
         .sub-title{
             background-color: #A97155;
             color: #BE8C63;
             font-size: 43px;
             height: auto;
-            margin: 20px;
             padding: 15px; 
+            margin: 40px 0px 10px;
         }
         .text{
             background-color: #e0c3b2;
@@ -35,29 +36,33 @@
             font-weight: 900;
             line-height: 47px;
             height: auto;
-            margin: 20px 20px 40px 20px;
             padding: 15px; 
-            
+            margin: 0px 0px 10px;
         }
         .img{
-            margin-left: 20px;
             padding-left: 0px; 
+            margin: 0px 0px 10px;
         }
         .table{
-            width:97%;
+            width:100%;
             background-color: #e0c3b2;
             color: #9c6e48;
             font-size: 24px;
             font-weight: 900;
             line-height: 47px;
-            margin: 20px 40px 40px 20px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding: 20px 10px;
+        }
+        .end{
+            background-color: #ffffff;
+            color: #cc966a;
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0px;
         }
     </style>
 </head>
 <body>
-    <div class="title">
+    <div id="title" class="title">
         Hi , I'm <br>Sharon Wang
     </div>
     <div id="aboutme">
@@ -120,18 +125,28 @@
             PROJECT
         </p>
         <p class="text">
-            動物醫院評價查詢系統<br><br>
-            <span style="font-size: 20px">@184ovdmm</span><br>
-            <img style="height: 200px" src="./img/AnimalHospital QR code.png" alt="@184ovdmm">
+            動物醫院評價查詢系統
         </p>
-    </div>
-    <div id="EXPERIENCE">
-        <p class="sub-title">
-            EXPERIENCE
-        </p>
-        <p class="text">
-            <!-- 聯成電腦智聯專班 -->
-        </p>
+        <table class="table" style="line-height: 30px">
+            <tr>
+                <td style="vertical-align: text-top" width="230">
+                    <img style="height: 200px" src="./img/AnimalHospital QR code.png" alt="@184ovdmm">
+                    <span style="font-size: 20px">@184ovdmm</span><br>
+                </td>
+                <td style="color:#695d59">
+                    專案名稱: 
+                    <ul style="font-size: 20px">
+                        <li>毛孩找醫生</li>
+                    </ul>
+                    專案工作內容:
+                    <ul style="font-size: 20px">
+                        <li>爬取googol動物醫院資訊</li>
+                        <li>建立資料庫</li>
+                        <li>開發LineBot</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
     </div>
     <div id="contact">
         <p class="sub-title">
@@ -141,6 +156,9 @@
             <a href="https://github.com/sparrowchuchu" target="_blank">GitHub</a>
         </p>
     </div>
-
+    <div id="end">
+        <p class="end">
+            2022 © sparrow</p>
+    </div>
 </body>
 </html>

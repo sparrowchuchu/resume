@@ -12,4 +12,9 @@
   - CSS
 - 內容進度
   - 主標題
+    - Sharon Wang
   - 次標題
+    - 新增 ABOUT ME 內容
+    - 新增 PROFICIENCY 內容
+    - 新增 PROJECT 內容
+    - 新增 CONTACT 內容
