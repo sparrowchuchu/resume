@@ -18,3 +18,11 @@
     - 新增 PROFICIENCY 內容
     - 新增 PROJECT 內容
     - 新增 CONTACT 內容
+
+> 20220610
+
+- 內容進度
+  - 次標題
+    - 更改標題名稱 "PROFICIENCY" to "SKILL"
+    - PROJECT 排版調整
+    - 新增 PROJECT 內容
