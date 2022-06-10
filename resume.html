@@ -12,13 +12,28 @@
             width: 580px;
             margin: auto;
         }
+        a{
+            text-decoration: none
+        }
+        a:hover{
+            color: #9ea045;
+        }
+        .index{
+            background-color: #b1cfdd
+        }
+        .index td {
+            width: 23%;
+            text-align: center;
+            color: #cc966a;
+            font-size: 20px;
+        }
         .title{
             background-color: #b1cfdd;
             color: #cc966a;
             font-size: 60px;
             height: 160px;
             padding: 66px;
-            margin: 30px 0px;
+            margin: 30px 0px 10px;
         }
         .sub-title{
             background-color: #A97155;
@@ -32,7 +47,6 @@
             background-color: #e0c3b2;
             color: #9c6e48;
             font-size: 24px;
-            font-size: 24px;
             font-weight: 900;
             line-height: 47px;
             height: auto;
@@ -44,7 +58,7 @@
             padding-left: 0px; 
             margin: 0px 0px 10px;
         }
-        .table{
+        table{
             width:100%;
             background-color: #e0c3b2;
             color: #9c6e48;
@@ -53,6 +67,20 @@
             line-height: 47px;
             padding: 20px 10px;
             margin: 0px 0px 20px;
+        }
+        form{
+            text-align: center;
+            /* color:#695d59 */
+            font-size: 20px;
+        }
+        input, textarea, select {
+            width: 60%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
         .end{
             background-color: #ffffff;
@@ -67,7 +95,15 @@
     <div id="title" class="title">
         Hi , I'm <br>Sharon Wang
     </div>
-    <div id="aboutme">
+    <div id="index">
+        <table class="index">
+            <td><a href="#aboutme">ABOUT ME</a></td>
+            <td><a href="#skill">SKILL</a></td>
+            <td><a href="#project">PROJECT</a></td>
+            <td><a href="#contact">CONTACT</a></td>
+        </table>
+    </div>
+    <div id="aboutme" class="block">
         <p class="sub-title">
             ABOUT ME
         </p>
@@ -77,7 +113,7 @@
             跨領域學習讓我對事物有獨特的想法。
         </p>
     </div>
-    <div id="SKILL">
+    <div id="skill" class="block">
         <p class="sub-title">
             SKILL
         </p>
@@ -120,7 +156,7 @@
             </tr>
         </table>
     </div>
-    <div id="PROJECT">
+    <div id="project" class="block">
         <p class="sub-title">
             PROJECT
         </p>
@@ -142,9 +178,10 @@
                         <li>開發LineBot</li>
                     </ul>
                 </td>
-                <td style="vertical-align: text-top" width="230">
+                <td class="project-link" style="vertical-align: text-top" width="230">
                     <img style="height: 210px" src="./img/AnimalHospital QR code.png" alt="@184ovdmm">
-                    <span style="font-size: 20px">@184ovdmm</span><br>
+                    <!-- <span style="font-size: 20px">@184ovdmm</span><br> -->
+                    <a style="font-size: 20px; color:#9c6e48" href="https://reurl.cc/41GqYY" target="_blank">https://reurl.cc/41GqYY</a>
                 </td>
             </tr>
         </table>
@@ -160,30 +197,43 @@
                     </ul>
                     專案工作內容:
                     <ul style="font-size: 20px">
-                        <li>政府資料開放平台篩選資料檔案</li>
+                        <li>政府資料開放平台篩選資料</li>
                         <li>資料處理 Pandas</li>
                         <li>圖表製作 Matplotlib</li>
                         <li>圖表分析</li>
                     </ul>
                 </td>
+                <td class="project-link" style="vertical-align: text-top" width="230">
+                    <img style="height: 210px" src="./img/CompanyData QR code.png" alt="@184ovdmm">
+                    <a style="font-size: 20px; color:#9c6e48" href="https://reurl.cc/b2yeN6" target="_blank">https://reurl.cc/b2yeN6</a>
+                </td>
             </tr>
         </table>
     </div>
-    <div id="contact">
+    <div id="contact" class="block">
         <p class="sub-title">
             CONTACT
         </p>
-        <table class="table">
-            <tr>
-                <td width= "100"><img style="height: 70px" src="./img/2048px-Octicons-mark-github.svg.png" alt=""></td>
-                <td><a style="text-decoration: none" href="https://github.com/sparrowchuchu" target="_blank">GitHub</a></td>
-            </tr>
-            <tr>
-                <td width= "100"><img style="height: 70px" src="./img/2048px-Octicons-mark-github.svg.png" alt=""></td>
-                <td><a style="text-decoration: none" href="https://github.com/sparrowchuchu" target="_blank">GitHub</a></td>
-            </tr>
-        </table>
-        </p>
+        <img class="img" src="./img/sparrow02.jpg" alt="sparrow02.jpg">
+        <div style="background-color:#e0c3b2;">
+            <table class="table" style="padding: 50px 170px">
+                <tr>
+                    <td width= "100"><img style="height: 70px" src="./img/2048px-Octicons-mark-github.svg.png" alt=""></td>
+                    <td><a href="https://github.com/sparrowchuchu" target="_blank">GitHub</a></td>
+                </tr>
+            </table>
+            <form action="" method="get" >
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="請輸入Email">
+                <br><br>
+                <label for="suggest">意見回饋</label>
+                <br>
+                <textarea name="suggest" id="suggest" cols="40" rows="10" placeholder="請輸入您的訊息"></textarea>
+                <br>
+                <button type="submit">確定</button>
+                <br><br>
+            </form>
+        </div>
     </div>
     <br><hr><br>
     <div id="end">
