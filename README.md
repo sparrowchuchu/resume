@@ -28,3 +28,10 @@
     - 更改標題名稱 "PROFICIENCY" to "SKILL"
     - PROJECT 排版調整
     - 新增 PROJECT 內容
+
+> 20220612
+
+- 內容進度
+  - 更新 PROJECT 內容
+  - PROJECT table 欄位合併
+  - href 樣式設定
