@@ -35,3 +35,8 @@
   - 更新 PROJECT 內容
   - PROJECT table 欄位合併
   - href 樣式設定
+
+> 20220901
+
+- 內容進度
+  - 更新 PROJECT 內容
