@@ -1,7 +1,7 @@
-# 簡介:
-技術： GitHub、 Deploy網站。 
-目的： 熟悉網頁語法與自我介紹。 
-HTML、CSS 。
+## 簡介:
+- 技術： GitHub、 Deploy網站。 
+- 目的： 熟悉網頁語法與自我介紹。 
+- HTML、CSS 。
 
 ## 製作動機 :
 
